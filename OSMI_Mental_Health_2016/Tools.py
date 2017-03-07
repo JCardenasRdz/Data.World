@@ -26,3 +26,9 @@ def my_chi2(X,Description):
     print('The expected distribution is :')
     print(round(expected_distribution))
     f()
+    
+def get_data():
+    import pandas as pd
+    df = pd.read_csv('https://query.data.world/s/bs6aqtm2l54gty0ng1vsgw37k')
+    # Get columns we need
+    return df
